@@ -1,0 +1,23 @@
+.imgFoto{
+  width: 7rem;
+  border: 5px green solid;
+  border-radius: 10%;
+}
+
+
+
+@media (max-width: 576px) {
+  .imgFoto{
+    width: 3rem;
+    border: 1px green solid;
+    border-radius: 10%;
+  }
+}
+
+@media (max-width: 400px) {
+  .imgFoto{
+    width: 2.5rem;
+    border: 1px green solid;
+    border-radius: 10%;
+  }
+}

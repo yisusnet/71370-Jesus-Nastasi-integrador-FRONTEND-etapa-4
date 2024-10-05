@@ -1,0 +1,109 @@
+{
+  "productos": [
+    {
+      "nombre": "Margarita 30cm",
+      "descripcion": "  Masa Artesanal, Salsa tomate al estilo italiano, queso mozzarella,  albahaca.",
+      "foto": "img/margarita.webp",
+      "precio": 4500,
+      "envio": true,
+      "stock": 15,
+      "categoria": "Tradicional",
+      "id": "1"
+    },
+    {
+      "nombre": "Napolitana 30cm",
+      "descripcion": "  Masa Artesanal, Salsa tomate al estilo italiano, queso mozzarella, tomate (corte media luna), ajo , queso parmesano, albahaca.",
+      "foto": "img/napolitana.webp",
+      "precio": 4500,
+      "envio": true,
+      "stock": 15,
+      "categoria": "Tradicional",
+      "id": "2"
+    },
+    {
+      "nombre": "Pepperoni 30cm",
+      "descripcion": "Masa Artesanal, Salsatomate al estilo italiano, queso mozzareldoble ración de pepperoni.",
+      "foto": "img/pepperoni.webp",
+      "precio": 5500,
+      "envio": true,
+      "stock": 5,
+      "categoria": "Tradicional",
+      "id": "3"
+    },
+    {
+      "nombre": "Quattro Formaggi 30cm",
+      "descripcion": " Masa Artesanal, Salsa tomate al estilo italiano, queso mozzarel  queso mantecoso, queso parmesano, qu  roquefort.",
+      "foto": "img/quattro-formaggi.webp",
+      "precio": 4600,
+      "envio": true,
+      "stock": 10,
+      "categoria": "Especial",
+      "id": "4"
+    },
+    {
+      "nombre": "Vegetariana 30cm",
+      "descripcion": " Masa Artesanal, Salsa de tomate al estilo italiano, queso mozzarellapimenton, champiñones, aceitunas negras.",
+      "foto": "/img/vegetariana.webp",
+      "precio": 3800,
+      "envio": true,
+      "stock": 20,
+      "categoria": "Especial",
+      "id": "5"
+    },
+    {
+      "nombre": "Hawaiana 30cm",
+      "descripcion": "Masa Artesanal, Salsa  tomate al estilo italiano, Queso Mozzarell piña en trozos, jamón cocido.",
+      "foto": "/img/pizza-hawaiana.webp",
+      "precio": 5800,
+      "envio": true,
+      "stock": 15,
+      "categoria": "Especial",
+      "id": "6"
+    },
+    {
+      "nombre": "Quattro staggioni 30cm",
+      "descripcion": " Masa Artesanal, Salsa de tomate al    estilo italiano, queso mozzarellaestaciones a eleccion.   ",
+      "foto": "/img/quattro-staggioni.webp",
+      "precio": 6000,
+      "envio": true,
+      "stock": 10,
+      "categoria": "Especial",
+      "id": "7"
+    },
+    {
+      "nombre": "2x pepperoni pizza 30Cm + Bebida 1.5litros",
+      "descripcion": " 2x pepperoni pizza 30Cm + Bebida 1.5litros a elección!.",
+      "foto": "/img/2-pepperoni-1-bebida-1.5L.webp",
+      "precio": 5900,
+      "envio": true,
+      "stock": 8,
+      "categoria": "Tradicional",
+      "id": "8"
+    },
+    {
+      "nombre": "coca cola lata 350ml",
+      "descripcion": "Bebida gaseosa con azucar añadida.",
+      "foto": "/img/coca-lata-350ml.webp",
+      "precio": 6500,
+      "envio": true,
+      "stock": 9,
+      "categoria": "Bebida",
+      "id": "9"
+    },
+    {
+      "nombre": "coca cola 1.5 Litros",
+      "descripcion": "Bebida gaseosa con azucar añadida 1.5 Litros.",
+      "foto": "/img/coca-original-1.5L.webp",
+      "precio": 6500,
+      "envio": true,
+      "stock": 52,
+      "categoria": "Bebida",
+      "id": "10"
+    }
+  ],
+  "carrito": [
+    [
+
+    ]
+  ]
+}

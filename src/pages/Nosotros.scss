@@ -1,0 +1,261 @@
+:root {
+  --amarillo-1: #ebde23;
+  --verde-1: #19b028;
+  --rojo-1: #e60901;
+  --amarillo-2: #ebc000;
+}
+
+.contenedor-main{
+  display: flex;
+  flex-direction: column; 
+  min-height: 100vh; 
+  margin-top: 5rem;
+}
+
+.main-contenido{
+  flex: 1;
+}
+
+
+.nosotros {
+  padding-top: 18rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+
+  &__header {
+    background-color: var(--rojo-1);
+    position: fixed;
+    top: 8.85rem;
+    width: 100%;
+    border-bottom-left-radius: 15rem;
+    border-bottom-right-radius: 15rem;
+    transition: opacity 0.2s ease, visibility 5s ease;
+    opacity: 3;
+    visibility: visible;
+  }
+  &__header.hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &__h1 {
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+
+  &__sobre-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 10rem;
+  }
+
+  &__h2-p {
+    width: 80%;
+    text-align: center;
+    background-color: var(--verde-1);
+    border: 0.5rem solid white;
+    border-radius: 0.8rem;
+    color: white;
+    padding: 1rem;
+  }
+
+  &__h2 {
+    font-size: 1.8rem;
+  }
+
+  &__h2-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    width: 80%;
+    text-align: center;
+    background-color: var(--verde-1);
+    border: 0.5rem solid white;
+    border-radius: 0.8rem;
+    color: white;
+    padding: 1.5rem;
+  }
+
+  &__team-member {
+    width: 30rem;
+    height: 16rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+
+  }
+
+  &__p-pie-de-foto {
+    font-size: 0.65rem;
+    margin-top: -0.5rem;
+  }
+
+  &__parrafo {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 0;
+    font-size: 1.2rem;
+  }
+
+  &__span {
+    color: var(--amarillo-1);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 0.2rem;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.8rem;
+    border: solid 0.5rem white;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .contenedor-main-nosotros{
+    margin-top: 6rem;
+  }
+
+  .nosotros {
+    padding-top: 5.5rem;
+    padding-bottom: 1rem;
+
+    &__header {
+      top: 2.8rem;
+      border-bottom-left-radius: 10rem;
+      border-bottom-right-radius: 10rem;
+    }
+
+    &__h1 {
+      padding: 0.5rem;
+      font-size: 0.7rem;
+    }
+
+    &__sobre-nosotros {
+      gap: 0.7rem;
+      margin-top: 1rem;
+    }
+
+    &__h2-p {
+      border: 0.25rem solid white;
+      border-radius: 0.55rem;
+      padding: 0.35rem;
+    }
+
+    &__h2 {
+      font-size: 1rem;
+    }
+
+    &__h2-image {
+      margin: 0.5rem;
+      width: 80%;
+      border: 0.25rem solid white;
+      border-radius: 0.55rem;
+      color: white;
+      padding: 0.5rem;
+    }
+
+    &__team-member {
+      height: 6.5rem;
+      margin: 0.5rem;
+    }
+
+    &__p-pie-de-foto {
+      font-size: 0.4rem;
+      margin-top: -0.25rem;
+    }
+
+    &__parrafo {
+      display: flex;
+      flex-direction: column;
+      flex: 0 0 0;
+      font-size: 0.6rem;
+    }
+
+    &__span {
+      color: var(--amarillo-1);
+      font-size: 1.1rem;
+      display: flex;
+      padding: 0rem;
+    }
+
+    &__image {
+      width: 100%;
+      height: 100%;
+      border: solid 0.25rem white;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .nosotros {
+    padding-top: 5.65rem;
+    display: flex;
+    flex-direction: column;
+ 
+
+    &__h1 {
+      padding: 0.6rem;
+      font-size: 0.6rem;
+    }
+
+    &__sobre-nosotros {
+      margin-top: 0.5rem;
+    }
+
+    &__h2-p {
+      border: 0.2rem solid white;
+      border-radius: 0.45rem;
+      padding: 0.25rem;
+    }
+
+    &__h2 {
+      font-size: 0.65rem;
+    }
+
+    &__h2-image {
+      margin: 0.3rem;
+      width: 80%;
+      border: 0.2rem solid white;
+      border-radius: 0.45rem;
+      padding: 0.3rem;
+    }
+
+    &__team-member {
+      height: 4rem;
+      margin: 0.3rem;
+    }
+
+    &__p-pie-de-foto {
+      font-size: 0.3rem;
+      margin-top: -0.18rem;
+    }
+
+    &__parrafo {
+      font-size: 0.5rem;
+    }
+
+    &__span {
+      font-size: 0.9rem;
+    }
+
+    &__image {
+      border-radius: 0.5rem;
+      border-radius: 0.7rem;
+      border: solid 0.12rem white;
+      object-fit: cover;
+    }
+  }
+}

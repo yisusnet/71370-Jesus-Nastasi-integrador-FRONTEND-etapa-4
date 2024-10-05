@@ -1,0 +1,135 @@
+
+.contenedorprincal{
+  align-items: center;
+
+
+}
+.contenedorDetalle {
+  display: flex;
+  min-height: 100vh;
+  margin-top: 10rem;
+  padding: 1.2rem;
+
+
+  &__main-contenido {
+    
+    flex: 1;
+
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    max-height: 700px;
+    margin: 0 auto; // Centra el contenido
+  }
+
+  &__h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: gree;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    box-shadow: 0 20px 8px rgba(0, 0, 0, 0.1);
+  }
+
+
+  &__p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #444;
+
+    strong {
+      color: #007bff; // Color destacado para los títulos
+    }
+  }
+
+  hr {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+  }
+
+  &__button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    
+ 
+
+    &:hover {
+      background-color: #45a049;
+    }
+
+    &:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(2px);
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    margin-top: 3rem; 
+
+    &__h1 {
+      font-size: 0.8rem;
+    }
+
+    &__p {
+      font-size: 0.65rem;
+    }
+
+    &__main-contenido {
+      padding: 15px;
+      font-size: 0.65rem;
+    }
+
+    &__button {
+      background-color: #4caf50;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      font-size: 0.8rem;
+
+
+    }
+  }
+
+  @media (max-width: 400px) {
+    margin-top: 4rem; 
+
+    &__h1 {
+      font-size: 1rem;
+    }
+
+
+    &__main-contenido {
+      font-size: 0.8rem;
+      padding: 15px;
+    }
+
+    &__button {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      text-align: center;
+      text-decoration: none;
+      font-size: 0.4rem;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 1rem;
+      margin-right: 1rem;
+
+    }
+  }
+}

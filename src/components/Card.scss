@@ -1,0 +1,178 @@
+:root {
+  --amarillo-1: #ebde23;
+  --verde-1: #19b028;
+  --rojo-1: #e60901;
+  --amarillo-2: #ebc000;
+}
+
+.card {
+  transition: 0.3s ease;
+
+
+  &:hover {
+    transform: scale(1.01);
+  }
+  &__article {
+    width: 17.75rem;
+    max-width: 22rem;
+    height: 27.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: #19b028;
+    border: 0.5rem solid white;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: white;
+    font-size: 0.6rem;
+    margin-bottom: rem;
+  }
+
+  &__precio{
+    font-size: 1.2rem;
+    background-color: #68c771;
+    border-radius: 0.4rem;
+    padding:0.2rem;
+    margin-top: 0.2rem;
+
+  }
+
+  &__article:hover {
+    background-color: var(--rojo-1);
+  }
+
+  &__image-container {
+    color: white;
+    
+  }
+
+  &__image {
+    width: 16rem;
+    max-width: 300px;
+    height: 16.62rem;
+    padding: 1rem 1rem;
+    border-radius: 1.5rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__image:hover {
+    background-color: var(--rojo-1);
+  }
+
+  &__button {
+    padding: 0.1rem;
+    font-size: 1rem;
+   
+   
+   }
+}
+
+@media (max-width: 576px) {
+  .card {
+    &__content {
+      width: 45%;
+      text-align: start;
+      align-self: center;
+      padding-left: 0.4rem;
+      position: relative;
+      right: 0.4rem;
+    }
+
+    &__precio{
+      font-size: 0.3rem;
+      background-color: #68c771;
+      border-radius: 0.4rem;
+      padding:0.2rem;
+      margin-top: 0.2rem;
+  
+    }
+
+    &__article {
+      display: flex;
+      width: 12.75rem;
+      height: 8rem;
+      margin: 0;
+      margin-bottom: 0.5rem;
+      font-size: 0.35rem;
+      border: 0.3rem solid white;
+      gap: 0.2rem;
+      margin-left: 0.3rem;
+    }
+
+    &__image-container {
+      color: white;
+
+    }
+
+    &__image {
+      padding: 0.3rem 0.3rem;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &__heading {
+      font-size: 0.65rem;
+      padding: 0.1rem;
+    }
+
+     &__button {
+      padding: 0.1rem;
+      font-size: 0.6rem;
+      margin-top: 0.2rem;
+     
+     }
+
+
+  }
+
+  
+}
+
+@media (max-width: 400px) {
+  .card {
+    &__content {
+      width: 45%;
+      text-align: start;
+      align-self: center;
+      padding-left: 0.2rem;
+      position: relative;
+      right: 0.4rem;
+    }
+
+    &__article {
+      display: flex;
+      width: 9.75rem;
+      height: 6rem;
+      font-size: 0.25rem;
+      border: 0.3rem solid white;
+      gap: 0.2rem;
+      margin-left: 0.3rem;
+    }
+
+    &__image {
+      padding: 0.2rem 0.2rem;
+    }
+
+    &__precio{
+      font-size: 0.25rem;
+      background-color: #68c771;
+      border-radius: 0.4rem;
+      padding:0.2rem;
+      margin-top: 0.2rem;
+  
+    }
+    &__heading {
+      font-size: 0.45rem;
+      padding: 0.1rem;
+    }
+
+    &__button {
+      padding: 0.1rem;
+      font-size: 0.40rem;
+      margin-top: 0.25rem;
+     
+     }
+  }
+}

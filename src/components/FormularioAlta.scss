@@ -1,0 +1,200 @@
+:root {
+  --amarillo-1: #ebde23;
+  --verde-1: #19b028;
+  --rojo-1: #e60901;
+  --amarillo-2: #ebc000;
+}
+.form-contenido{
+  margin-top: 5rem;
+}
+.Formu-contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--verde-1);
+  border-radius: 10px;
+  width: 45%;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 0.5rem solid white;
+
+  &:focus-within {
+    background-color: var(--rojo-1);
+  }
+
+  &__h3 {
+    text-align: center;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+
+  &__label-input {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  &__label {
+    font-size: 1rem;
+    padding-left: 1rem;
+    color: var(--rojo-1);
+  }
+
+
+  &__input {
+    border-radius: 0.5rem;
+    width: 70%;
+    height: 2rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+
+
+
+    &:focus {
+      background-color: #e9f5ea;
+      border-color: #28a745;
+      outline: none;
+    }
+  }
+
+  &__inputcheckbok {
+    width: auto;
+    margin-left: 1rem;
+  }
+
+  &__Select{
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  &__button-guardar {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #28a745;
+    color: black;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+
+    &:hover {
+      background-color: rgb(189, 170, 170);
+      border-color: var(--rojo-1);
+    }
+  }
+
+  &__button-limpiar {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #dc3545;
+    color: black;
+  
+    text-align: center;
+
+    &:hover {
+      border-color: var(--verde-1);
+    }
+  }
+}
+
+
+
+@media (max-width: 576px) {
+  .form-contenido{
+    margin-top: -2rem;
+  }
+
+  .Formu-contenedor {
+    width: 65%; 
+    padding: 1rem; 
+
+    &__label-input {
+
+      padding: 0.5rem;
+      margin-top: 0.2rem;
+      margin-bottom: 0.3rem;
+
+    }
+
+    &__label {
+      font-size: 0.8rem;
+
+    }
+
+    &__input {
+      width: 70%; 
+      font-size: 1rem; 
+    }
+    
+    &__Select {
+      width: 70%; 
+      font-size: 1rem; 
+    }
+
+    &__button-guardar, &__button-limpiar {
+      width: 100%; 
+      font-size: 1rem; 
+    }
+    &__h3 {
+      font-size: 1.2rem; 
+    }
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  .form-contenido{
+    margin-top: -3rem;
+  }
+
+  .Formu-contenedor {
+    padding: 1rem; 
+
+    &__label-input {
+
+      padding: 0.5rem;
+      margin-top: 0.2rem;
+      margin-bottom: 0.3rem;
+
+    }
+
+    &__label {
+      font-size: 0.6rem;
+
+    }
+
+    &__input {
+      width: 60%; 
+
+    }
+
+    &__input, &__Select {
+      font-size: 0.6rem; 
+      width: 60%;
+    }
+
+    &__button-guardar, &__button-limpiar {
+      font-size: 0.9rem; 
+    }
+    &__h3 {
+      font-size: 1rem; 
+    }
+  }
+
+}
