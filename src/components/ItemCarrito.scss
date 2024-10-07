@@ -5,6 +5,15 @@
   border-radius: 1rem;
 }
 
+.booton-eliminar{
+      background-color: #28a745;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    margin: 1rem;
+    font-size: 1rem;
+}
+
 
 @media (max-width: 576px) {
   .fotoItemCarrito
@@ -13,9 +22,22 @@
     border: green  2px solid;
     border-radius: 1rem;
   }
+ 
   
+  .booton-eliminar{
+    background-color: #28a745;
+  color: white;
+  padding: 0.4rem;
+  border: none;
+  font-size: 0.8rem;
+  width: 70%;
+}
+
 }
 
 @media (max-width: 400px) {
-
+  .booton-eliminar{
+  font-size: 0.6rem;
+  width: 55%;
+}
 }

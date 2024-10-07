@@ -1,19 +1,28 @@
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import Card from "../components/Card";
 import Header from "../components/Header";
 import ProductosContext from "../context/ProductosContext";
 import useTitulo from "../hooks/useTitulo";
+import Spinner from '../components/Spinner'; 
 import './Inicio.scss';
 
 const Inicio = () => {
   const { productos } = useContext(ProductosContext);
   const [busquedaTermino, setBusquedaTermino] = useState('');
+  const [loading, setLoading] = useState(true);
 
   const handleSearch = (term) => {
     setBusquedaTermino(term);
   };
 
   useTitulo('Inicio');
+
+  
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
 
   const filtrarProducto = productos.filter(producto =>
     producto.nombre.toLowerCase().includes(busquedaTermino.toLowerCase()) ||
@@ -31,7 +40,9 @@ const Inicio = () => {
           </header>
 
           <div className="cards-container" id="contenedor-cards">
-            {filtrarProducto.length > 0 ? ( 
+            {loading ? ( 
+              <Spinner /> 
+            ) : filtrarProducto.length > 0 ? (
               filtrarProducto.map((producto) => (
                 <Card key={producto.id} producto={producto} />
               ))

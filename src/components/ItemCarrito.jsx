@@ -24,7 +24,7 @@ const handleEliminar = (id) => {
       <td>{producto.cantidad}</td>
       <td>{producto.precio}</td>
       <td> 
-        <button onClick={() => handleEliminar(producto.id)}>eliminar</button>
+        <button className="booton-eliminar" onClick={() => handleEliminar(producto.id)}>eliminar</button>
         </td>
 
     </tr>

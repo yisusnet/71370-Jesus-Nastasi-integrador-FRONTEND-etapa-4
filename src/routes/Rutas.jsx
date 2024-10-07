@@ -6,6 +6,7 @@ import Contacto from "../pages/Contacto"
 import NoEncontrado from "../pages/NoEncontrado"
 import Carrito from "../pages/Carrito"
 import DetalleProducto from "../components/DetalleProducto"
+import Comprando from "../components/Comprando"
 
 
 const Rutas = () => {
@@ -19,6 +20,8 @@ const routes = useRoutes(
     {path:'/contacto', element: <Contacto/>}, 
     {path:'/carrito', element: <Carrito/>}, 
     {path:'/detalleProducto/:idProducto' , element: <DetalleProducto/>}, 
+    { path: '/realizando-pago', element: <Comprando /> },
+    
     {path:'*', element: <NoEncontrado/>}, 
 
   ]

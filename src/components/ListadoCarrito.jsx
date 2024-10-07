@@ -3,9 +3,10 @@ import ItemCarrito from "./ItemCarrito";
 import CarritoContext from "../context/CarritoContext";
 import './ListadoCarrito.scss';
 import notificaSweet2 from "./service/ListadoCarrito.service";
+import { NavLink } from "react-router-dom";
 
 const ListadoCarrito = () => {
-  const { carrito, limpiarCarritoContext, guardarCarritoContext } = useContext(CarritoContext);
+  const { carrito, limpiarCarritoContext} = useContext(CarritoContext);
 
   const totalCarrito = useMemo(() => {
     return carrito.reduce((total, producto) => {
@@ -16,7 +17,6 @@ const ListadoCarrito = () => {
   const handleComprar = () => {
     console.log('comprando')
 
-    guardarCarritoContext(carrito);
   };
 
   const handleLimpiarCarrito = () => {
@@ -54,19 +54,20 @@ const ListadoCarrito = () => {
           </table>
 
           <div className="contenedor-botones">
-            <hr />
+          
             {carrito.length > 0 && (
               <>
-                <button onClick={handleLimpiarCarrito}>Vaciar Carrito</button>
-                <button onClick={handleComprar}>Comprar</button>
+                <button className="contenedor-botones__vaciar-carrito" onClick={handleLimpiarCarrito}>Vaciar Carrito</button>
+               <NavLink to='/realizando-pago'><button className="contenedor-botones__comprar" onClick={handleComprar}>Comprar</button></NavLink>
               </>
             )}
+                      <div className="contenedor-botones__total-carrito">
+            <p>Total: ${totalCarrito}</p>
+          </div>
           </div>
 
           
-          <div className="total-carrito">
-            <p>Total: ${totalCarrito.toFixed(2)}</p>
-          </div>
+
         </div>
       </div>
     </>

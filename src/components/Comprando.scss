@@ -1,0 +1,184 @@
+
+
+.comprando-container {
+  display: flex;
+  flex-direction: column; 
+  min-height: 100vh; 
+  margin-top:13rem;
+  align-items: center;
+  align-content: center;
+}
+
+.comprando-container2{
+  min-width: 40rem;
+  padding: 1rem;
+  border: 2px solid #005121c3;
+  background-color: #fff;
+  border-radius: 1rem;
+  
+}
+.comprando-container h1 {
+  text-align: center;
+  margin-bottom:1.5rem;
+}
+
+.tabla-compra {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.2rem;
+}
+
+.tabla-compra th, .tabla-compra td {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #078a21;
+}
+
+.total-compra {
+  text-align: right;
+  font-size: 1.3em;
+  margin-bottom: 1rem;
+}
+
+
+.botones-compra  {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+
+&__retroceder{
+  background-color: #28a745;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+}
+
+&__pago{
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+&__retroceder:hover{
+  background-color: #e91717;
+
+}
+
+&__pago:hover{
+  background-color: #e91717;
+}
+  
+}
+
+
+@media (max-width: 576px){
+
+
+
+
+  .comprando-container {
+    margin-top:10rem;
+  }
+  
+  .comprando-container2{
+    min-width: 25rem;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    
+  }
+  .comprando-container h1 {
+    text-align: center;
+    margin-bottom:0.5rem;
+    font-size: 1rem;
+  }
+  
+  .tabla-compra {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0.5rem;
+   
+   
+  }
+  
+  .total-compra {
+    text-align: right;
+    font-size:0.8rem;
+  }
+  
+  
+  .botones-compra  {
+    
+
+    
+  
+    &__retroceder, &__pago {
+      padding: 0.5rem;
+     width: 1rem;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+      flex-basis: 30%;
+      
+    }
+  
+    &__retroceder:hover, &__pago:hover {
+      background-color: #e91717;
+    }
+  }
+
+}
+@media (max-width: 400px){
+
+
+
+
+  .comprando-container {
+    
+    margin-top:7rem;
+  }
+  
+  .comprando-container2{
+    min-width: 0rem;
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    
+  }
+  .comprando-container h1 {
+    text-align: center;
+    margin-bottom:0.5rem;
+    font-size: 1rem;
+  }
+  
+  .tabla-compra {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0.5rem;
+   
+   
+  }
+  
+  .total-compra {
+    text-align: right;
+    font-size:0.6rem;
+  }
+  
+  
+  .botones-compra  {
+    
+    &__retroceder, &__pago {
+      padding: 0.5rem;
+     width: 1rem;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+      flex-basis: 30%;
+      
+    }
+  
+    &__retroceder:hover, &__pago:hover {
+      background-color: #e91717;
+    }
+  }
+
+}
